@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/involve_/static/css/main.c68e09f9.css",
+    "main.js": "/involve_/static/js/main.889bfc7c.js",
+    "static/js/787.2b3b8459.chunk.js": "/involve_/static/js/787.2b3b8459.chunk.js",
+    "static/media/send-svgrepo-com.svg": "/involve_/static/media/send-svgrepo-com.4e6d6b41b91b81a93fde715d2a555704.svg",
+    "index.html": "/involve_/index.html",
+    "main.c68e09f9.css.map": "/involve_/static/css/main.c68e09f9.css.map",
+    "main.889bfc7c.js.map": "/involve_/static/js/main.889bfc7c.js.map",
+    "787.2b3b8459.chunk.js.map": "/involve_/static/js/787.2b3b8459.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c68e09f9.css",
+    "static/js/main.889bfc7c.js"
+  ]
+}

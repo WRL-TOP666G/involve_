@@ -2,42 +2,9 @@ import React, {useState} from 'react';
 import axios from "axios";
 import sendIcon from "../send-svgrepo-com.svg"
 function PostForm(){
+    // URL
     const url="http://0.0.0.0:80/submit"
 
-    // const url="http://0.0.0.0:80/submit"
-    // const [data, setData] = useState({
-    //     name: "",
-    //     phone: "",
-    //     email: "",
-    // })
-    //
-    // // function submit(e){
-    // const submit = async (e) => {
-    //     e.preventDefault();
-    //     try{
-    //         axios.post(url, data);
-    //     } catch(error){
-    //         console.error(error);
-    //     }
-    // }
-    // function handle(e){
-    //     const newData={...data}
-    //     newData[e.target.id] = e.target.value
-    //     setData(newData)
-    //     console.log(newData)
-    // }
-    //
-    // return(
-    //     <div>
-    //         {/*<form onSubmit={(e)=>submit(e)}>*/}
-    //         <form onSubmit={submit}>
-    //             <input onChange={(e)=>handle(e)} id="name" value={data.name} placeholder="name" type="text"></input>
-    //             <input onChange={(e)=>handle(e)} id="phone" value={data.phone} placeholder="phone" type="text"></input>
-    //             <input onChange={(e)=>handle(e)} id="email" value={data.email} placeholder="email" type="text"></input>
-    //             <button>Submit</button>
-    //         </form>
-    //     </div>
-    // )
 
     const [prompts, setPrompts] = useState([]);
     const [formData, setFormData] = useState({
@@ -67,16 +34,6 @@ function PostForm(){
         } catch(error){
             console.error(error);
         }
-
-        // const prompt = event.target[0].value;
-        //
-        // console.log(event.target);
-        // // get response from http
-        // let res='Get from GPT'
-        //
-        // // set prompt and response
-        // const obj = { response: res}
-        // setPrompts([...prompts, obj]);
     };
 
     function insertLineBreaks(text) {
@@ -115,7 +72,7 @@ function PostForm(){
                     <label htmlFor="details">Details:</label><br/>
                     <textarea rows="7" cols="30" id="details" name="details" value={formData.details} onChange={handleChange}/><br/>
 
-                    <button className="submit" type="submit">Submit <img className="sendIcon" src={sendIcon} alt="img"/> </button>
+                    <button className="submit" type="submit">Submit <img className="sendIcon" src={sendIcon} alt="sending_image"/> </button>
                 </form>
 
             </div>

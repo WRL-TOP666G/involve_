@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import axios from "axios";
 import sendIcon from "../send-svgrepo-com.svg"
 function PostForm(){
@@ -115,7 +115,7 @@ function PostForm(){
                     <label htmlFor="details">Details:</label><br/>
                     <textarea rows="7" cols="30" id="details" name="details" value={formData.details} onChange={handleChange}/><br/>
 
-                    <button className="submit" type="submit">Submit <img className="sendIcon" src={sendIcon}/> </button>
+                    <button className="submit" type="submit">Submit <img className="sendIcon" src={sendIcon} alt="img"/> </button>
                 </form>
 
             </div>

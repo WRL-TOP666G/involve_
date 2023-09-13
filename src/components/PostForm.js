@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios";
 import sendIcon from "../send-svgrepo-com.svg"
 function PostForm(){
-    // const url="http://0.0.0.0:80/submit"
-    url=""
+    const url="http://0.0.0.0:80/submit"
 
     // const url="http://0.0.0.0:80/submit"
     // const [data, setData] = useState({
